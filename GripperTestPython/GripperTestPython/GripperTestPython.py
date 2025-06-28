@@ -34,19 +34,19 @@ def modbus_gripper() :
             print(g_state)
             sleep(0.2)
         print("CHANGE")
-        # g_state = 0;
-        # m_gripper.SetTargetPosition(1000)
-        # while(g_state == 0) :
-        #     g_state = m_gripper.GetGripState()  # 0 means moving 1 means arrive 2 means jiazhu 3 means diaoluo
-        #     print(g_state)
-        #     sleep(0.2)
-        # print("CHANGE")
-        # g_state = 0;
-        # m_gripper.SetTargetPosition(500)
-        # while(g_state == 0) :
-        #     g_state = m_gripper.GetGripState()
-        #     print(g_state)
-        #     sleep(0.2)
+        g_state = 0;
+        m_gripper.SetTargetPosition(1000)
+        while(g_state == 0) :
+            g_state = m_gripper.GetGripState()  # 0 means moving 1 means arrive 2 means jiazhu 3 means diaoluo
+            print(g_state)
+            sleep(0.2)
+        print("CHANGE")
+        g_state = 0;
+        m_gripper.SetTargetPosition(500)
+        while(g_state == 0) :
+            g_state = m_gripper.GetGripState()
+            print(g_state)
+            sleep(0.2)
     m_gripper.close()
 
 def socket_gripper() :
