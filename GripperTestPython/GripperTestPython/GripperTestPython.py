@@ -58,7 +58,7 @@ def socket_gripper() :
     speed = 100
 
     m_gripper.open(ip,port)
-    m_gripper.Initialization();
+    m_gripper.Initialization()
     print('Send grip init')
 
     while(initstate != 1) :
