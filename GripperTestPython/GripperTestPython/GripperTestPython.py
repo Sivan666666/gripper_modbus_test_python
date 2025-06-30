@@ -41,7 +41,7 @@ def modbus_gripper() :
             print(g_state)
             sleep(0.2)
         print("CHANGE")
-        g_state = 0;
+        g_state = 0
         m_gripper.SetTargetPosition(500)
         while(g_state == 0) :
             g_state = m_gripper.GetGripState()
